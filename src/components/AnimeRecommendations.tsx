@@ -23,9 +23,9 @@ export function AnimeRecommendations({ animeId }: AnimeRecommendationsProps) {
         setIsLoading(true);
         setError(null);
         const data = await getAnimeRecommendations(animeId);
-        
+
         if (isMounted) {
-          setRecommendations(data.data || []);
+          setRecommendations(data || []);
         }
       } catch (err) {
         if (isMounted) {

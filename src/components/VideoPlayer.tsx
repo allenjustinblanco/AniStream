@@ -8,6 +8,8 @@ interface VideoPlayerProps {
   videoUrl?: string;
   poster?: string;
   title?: string;
+  animeId?: number;
+  episodeId?: number;
 }
 
 export function VideoPlayer({ videoUrl, poster, title }: VideoPlayerProps) {

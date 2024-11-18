@@ -3,7 +3,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { Card, CardContent } from '@/components/ui/card';
 import { getTopAnime, type AnimeData } from '@/lib/api';
 import { Link } from 'react-router-dom';
-import { Loader2 } from 'lucide-react';
 
 interface RankingItemProps {
   anime: AnimeData;

@@ -12,7 +12,7 @@ interface TrailerSectionProps {
   title: string;
 }
 
-export function TrailerSection({ videos, title }: TrailerSectionProps) {
+export function TrailerSection({ videos }: TrailerSectionProps) {
   const [selectedVideo, setSelectedVideo] = useState<{ url: string; title: string } | null>(null);
   const [activeTab, setActiveTab] = useState<'promos' | 'music'>('promos');
 
